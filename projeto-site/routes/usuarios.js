@@ -12,7 +12,7 @@ router.post('/autenticar', function(req, res, next) {
 	var login = req.body.login; // depois de .body, use o nome (name) do campo em seu formulário de login
 	var senha = req.body.senha; // depois de .body, use o nome (name) do campo em seu formulário de login	
 	
-	let instrucaoSql = `select * from usuario where name_user='${login}' and pass_user='${senha}'`;
+	let instrucaoSql = `select * from usuario where login='${login}' and senha='${senha}'`;
 	console.log(instrucaoSql);
 
 	sequelize.query(instrucaoSql, {
@@ -21,7 +21,7 @@ router.post('/autenticar', function(req, res, next) {
 		console.log(`Encontrados: ${resultado.length}`);
 
 		if (resultado.length == 1) {
-			sessoes.push(resultado[0].dataValues.name_user);
+			sessoes.push(resultado[0].dataValues.login);
 			console.log('sessoes: ',sessoes);
 			res.json(resultado[0]);
 		} else if (resultado.length == 0) {
@@ -37,7 +37,7 @@ router.post('/autenticar', function(req, res, next) {
 });
 
 /* Cadastrar usuário */
-router.post('/', function(req, res, next) {
+router.post('/cadastrar', function(req, res, next) {
 	console.log('Criando um usuário');
 	
 	Usuario.create({

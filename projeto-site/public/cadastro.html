@@ -13,7 +13,7 @@
         <source src="./media/vortex2.mp4" type="video/mp4">
     </video>
     <div class="layer">
-        <form class="login" method="POST">
+        <form class="login" id="form_cadastro" method="post" onsubmit="return cadastrar()">
             <h1>Crie uma conta</h1>
             <input class="ipt" type="text" id="login" placeholder="E-mail" />
             <br>
