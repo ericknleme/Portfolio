@@ -19,7 +19,7 @@
             <h1>Bem vindo</h1>
             <input class="ipt" type="text" id="login" name="login" placeholder="Usuário ou e-mail" required/>
             <br>
-            <input class="ipt" type="text" id="password" name="senha" placeholder="Senha" required/>
+            <input class="ipt" type="password" id="password" name="senha" placeholder="Senha" required/>
             <br>
             <button class="btn" type="submit" id="btn_entrar">Entrar</button>
         </form>
@@ -60,17 +60,4 @@
 
         return false;
     }
-
-    function aguardar() {
-        btn_entrar.disabled = true;
-        img_aguarde.style.display='block';
-        div_erro.style.display='none';
-    }
-
-    function finalizar_aguardar() {
-        btn_entrar.disabled = false;
-        img_aguarde.style.display='none';
-        div_erro.style.display='block';
-    }
-
 </script>
