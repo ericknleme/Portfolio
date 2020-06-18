@@ -52,27 +52,44 @@ body {
 .grids p{
     margin-top: -0.1em;
 }
-.fotos {
+.capas{
+    position: relative;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     text-align: center;
+    transition: none;
 }
-
 .albuns {
     position: relative;
-    width: 300px;
-    height: 300px;
+    max-width: 17.5em;
+    height: 13em;
     object-fit: cover;
     margin: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: none;
 }
-
-.albuns:hover {
-    opacity: 0.4;
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
-
+.capas:hover .albuns {
+    opacity: 0.75;
+}
+.capas:hover .middle{
+    opacity:1;
+}
+.text {
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+  }
 .footer {
     width: 100%;
     height: auto;
@@ -90,10 +107,10 @@ a {
     transition: transform .2s;
 }
 
-.footer p,
+/* .footer p,
 a:hover {
     transform: scale(1.2);
-}
+} */
 
 .footer img {
     float: left;

@@ -1,0 +1,16 @@
+body {
+    scroll-behavior: smooth;
+    margin-top: 0;
+    font-size: calc(1em + 1vw);
+    font-family: 'Roboto', sans-serif;
+}
+.titulo_album{
+   font-size: 1em;
+   text-align: center; 
+}
+.descricao_album{
+    font-size: 0.8em;
+    margin-left:12%;
+    margin-right:12%;
+    text-align: center;
+}
