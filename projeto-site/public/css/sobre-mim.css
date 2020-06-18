@@ -1,9 +1,9 @@
 @keyframes showoff {
     0%{
-        width:0.8em;
-        height:0.8em;
-        margin-top: 0.5;
-        margin-left:-35%;
+        width:5em;
+        height:5em;
+        margin-top: -10%;
+        /* margin-left:-50%; */
         opacity: 0;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
@@ -15,6 +15,15 @@
         margin-right:35%;
         opacity: 1;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+@keyframes fadetxt{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
     }
 }
 body{
@@ -75,11 +84,15 @@ body{
 .sobre-mim h2{
     text-align: center;
     width:100%;
+    animation-name:fadetxt;
+    animation-duration: 2.5s;
 }
 .sobre-mim p{
     text-align: center;
     /* text-align: justify; */
     width: 85%;
+    animation-name:fadetxt;
+    animation-duration: 2.5s;
 }
 .footer{
     width:100%;

@@ -1,3 +1,17 @@
+@keyframes gallery{
+    0%{
+        width: 30px;
+        height: 30x;
+        margin-right: 300px;
+        opacity: 0;
+    }
+    100%{
+        width: 300px;
+        height: 300px;
+        margin: 30px;
+        opacity: 1;
+    }
+}
 body {
     scroll-behavior: smooth;
     margin-top: 0;
@@ -65,6 +79,12 @@ body {
     object-fit: cover;
     margin: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name:gallery;
+    animation-duration: 3.2s;
+    transition: transform .2s;
+}
+.fotos img:hover {
+    transform: scale(1.5);
 }
 
 .footer {
