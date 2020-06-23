@@ -9,3 +9,6 @@ senha varchar(45)
 );
 
 select * from usuario;
+
+drop table usuario;
+show tables;

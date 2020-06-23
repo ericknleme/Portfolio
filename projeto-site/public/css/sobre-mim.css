@@ -89,7 +89,7 @@ body{
 }
 .sobre-mim p{
     text-align: center;
-    /* text-align: justify; */
+    text-align: justify;
     width: 85%;
     animation-name:fadetxt;
     animation-duration: 2.5s;

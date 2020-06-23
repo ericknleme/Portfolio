@@ -23,6 +23,7 @@ body {
     margin-left:12%;
     margin-right:12%;
     text-align: center;
+    text-align: justify;
     animation-name:fadetxt;
     animation-duration: 5s;
 }
