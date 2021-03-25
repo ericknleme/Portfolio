@@ -88,8 +88,9 @@ body {
     color: black;
     font-size: 1em;
     text-decoration: none;
-  }
-  .footer {
+}
+
+.footer {
     width: 100%;
     height: auto;
     margin-top:5%;
@@ -99,26 +100,16 @@ body {
     transition: transform .2s;
 }
 
-.footer p{
+.footer p,
+a {
     float: left;
     font-size: 1em;
     color: black;
     transition: transform .2s;
 }
 
-
-.footer a{
-    float: left;
-    font-size: 1em;
-    color: black;
-    transition: transform .2s;
-    text-decoration: none;
-}
-
-.footer p:hover {
-    transform: scale(1.2);
-}
-.footer a:hover {
+.footer p,
+a:hover {
     transform: scale(1.2);
 }
 
